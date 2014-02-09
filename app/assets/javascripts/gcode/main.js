@@ -42,8 +42,6 @@ var initGL = function() {
 		if (gl) break;
 	}
 
-	console.log(gl);
-
 	if (gl === null) {		
 		var canvas_error = document.getElementById("canvas-error");
 		console.log(canvas_error);
