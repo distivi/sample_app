@@ -21,7 +21,8 @@ var shapeChanged = function(selectObj) {
 				G01 Z0.1 F5.<br>\
 				G00 X0. Y0. Z0.25<br>";
 
-	outputCode.innerHTML = str;
+	outputCode.innerHTML = str;	
+	initGL();
 };
 
 var initGL = function() {
