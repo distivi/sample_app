@@ -1,0 +1,36 @@
+<% content_for(:head) do %>
+<%= javascript_include_tag "gcode/main.js"  %>
+<% end %>
+
+<div class="center hero-unit">
+	<h1 class="gcode">G-Code generator</h1>	
+		<div class="horizontal-block">
+			<div class="draw-container">
+				<canvas id="сanvas">Does Not Support Canvas Element</canvas>
+				<h1 id="canvas-error">Sorry, your browser doesn't suppor WebGL</h1>
+			</div>
+			<div class="input-container">
+
+				Select some shape<br>
+				<select name="ComboBox" onchange="shapeChanged(this)">
+					<option value="1" selected="">Line</option>
+					<option value="2">Rectangle</option>
+					<option value="3">Circle</option>
+					<option value="4">Solid Rectangle</option>
+					<option value="5">Solid Circle</option>
+				</select>
+				<br>
+				You selected: <span id="output">Line</span>
+				
+			 </div>
+		</div>
+
+		 <div class="output-container">
+		 	<div class="scroll-block">
+				<span id="gcode output"><span>
+			</div>
+
+		 </div>
+	
+
+</div>
